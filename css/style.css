@@ -1,0 +1,23 @@
+body{margin:0;font-family:sans-serif;background:#0a0a0a;color:#fff}
+.container{width:90%;margin:auto;display:flex;justify-content:space-between;align-items:center}
+.header{padding:20px 0;background:#000}
+nav a{margin-left:20px;color:#fff;text-decoration:none}
+
+.hero{height:100vh;display:flex;align-items:center;justify-content:center;background:url('https://images.unsplash.com/photo-1517841905240-472988babdf9') center/cover}
+.fade-in{opacity:0;transform:translateY(20px);transition:1s}
+.fade-in.show{opacity:1;transform:translateY(0)}
+
+.slider{overflow:hidden}
+.slides{display:flex;animation:slide 12s infinite}
+.slides img{width:100vw}
+
+@keyframes slide{
+0%{transform:translateX(0)}
+33%{transform:translateX(-100%)}
+66%{transform:translateX(-200%)}
+100%{transform:translateX(0)}
+}
+
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;padding:40px}
+.grid img{width:100%;border-radius:10px;transition:0.3s}
+.grid img:hover{transform:scale(1.05)}
